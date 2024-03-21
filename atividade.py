@@ -195,17 +195,31 @@ calcule os descontos e o salário líquido, conforme a tabela abaixo:
 = Salário Liquido : R$
 Obs.: Salário Bruto - Descontos = Salário Líquido.
 """
+hr_dia = float(input("Infome o valor da sua hora trabalhada:$ "))
+hr_mes = float(input("Infome a quantidade de horas trabalhadas no mês: "))
 
-valor_hora_mes = float(input("Informe quanto você ganha por hora trabalhada = "))
-horas_trabalhadas = float(input("Informe a quantidade de horas trabalhadas por mês = "))
+
+# dados para teste: 
+# hr_dia = 7.06
+# hr_mes = 200
+# totalizando = 1.412,19 
 
 # Algumas resaltas do sistema. 
 # - 11% de imposto de renda do salário
 # - 8% para INSS
 # - 5% para o sindicato
+# formula para executar a funcão type, e verificar a classe do dado selecionado.
+salario = hr_dia * hr_mes
 
-salario_bruto = valor_hora_mes * horas_trabalhadas
+impt_renda = salario * 0.11
+# Representação da porcentagem em programação, 11% e a mesma coisa de 11/100.
+# No caso acima coloquei entre parentese para ter prioridade , então quando o cófigo for inicia a linha, o prieiro a ser executado sera o oporação de porcentagem entre pararentese.
+# Resultado com os dados do teste = 
+inss = impt_renda * 0.8
+# resultado com os dados teste = 1411.81
+sindicato = salario * 0.5
 
-slr = salario_bruto 
-
-print(salario_bruto)
+print (f"Salario equivale á = r$ {salario:.2f}")\n    #Salário Bruto : R$ %.2f' %salario
+print(f"Disconto do imposto de renda = R${impt_renda:.2f} ")\r
+print ("Disconto do inss = R$ %.2f", salario) #Outra forma de apresenta saida de com controle de casas decimais.
+print ("")
