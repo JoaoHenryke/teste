@@ -219,7 +219,9 @@ inss = impt_renda * 0.8
 # resultado com os dados teste = 1411.81
 sindicato = salario * 0.5
 
-print (f"Salario equivale á = r$ {salario:.2f}")\n    #Salário Bruto : R$ %.2f' %salario
-print(f"Disconto do imposto de renda = R${impt_renda:.2f} ")\r
+print (f"Salario equivale á = r$ {salario:.2f}")  #Salário Bruto : R$ %.2f' %salario
+print(f"Disconto do imposto de renda = R${impt_renda:.2f} ")
 print ("Disconto do inss = R$ %.2f", salario) #Outra forma de apresenta saida de com controle de casas decimais.
 print ("")
+
+print("olaá João")
